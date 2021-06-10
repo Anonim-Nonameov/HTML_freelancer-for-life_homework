@@ -7,8 +7,10 @@
 	<title>ДЗ - HTML</title>
 </head>
 <body>
+
 	<!-- №1 -->
-	<h1><a href="https://saprpavel.livejournal.com/16928.html">Очень длинный-длинный текст :)</a></h1>
+
+	<!-- <h1><a href="https://saprpavel.livejournal.com/16928.html">Очень длинный-длинный текст :)</a></h1>
 	 <h2>Первые впечатления</h2>
 	  <p>
 		 Переночевав в гостинице в Гуаякиле, мы сели к агенту
@@ -90,7 +92,78 @@
 		отпустили отдохнуть, так как впереди 6-часовая вахта,
 		а сразу после нее отшвартовка и идем в Гуаякиль, а во время отшвартовки и пока лоцман на судне -
 		мое место на мостике. Так что, предстоит основательно заколебаться.
-	  </p>
+	  </p> -->
+
+	<!-- №2 -->
+
+	  <form action="#" method="post" enctype="multipart/form-data">
+
+	  <div>
+		  <p>Логин</p>
+		  <input placeholder="Логин" tabindex="1" type="text" name="username">
+	  </div>
+
+	  <div>
+		  <p>Пароль</p>
+		  <input placeholder="Пароль" tabindex="2" type="password" name="userpasswd">
+	  </div>
+
+	  <div>
+		  <p>Контакты</p>
+		<div>
+		  <input placeholder="Телефон" tabindex="3" type="tel" name="userphone">
+		</div>
+<br>
+		<div>
+		  <input tabindex="4" type="checkbox" name="userwhatsp"> Whatsapp
+		</div>
+
+		<div>
+		  <input tabindex="5" type="checkbox" name="usertelegrm"> Telegram
+		</div>
+
+		<div>
+		  <input tabindex="6" type="checkbox" name="uservk"> VK
+		</div>
+	</div>
+
+		<div>
+			<p>Пол</p>
+			<div>
+				<input tabindex="7" checked type="radio" name="gender" value="male"> Мужской
+			</div>
+			<div>
+				<input tabindex="7" type="radio" name="gender" value="female"> Женский
+			</div>
+			<div>
+				<input tabindex="7" type="radio" name="gender" value="other"> Другой
+			</div>
+		</div>
+
+		<div>
+			<p>Ваше имущество</p>
+			<div>
+				<input tabindex="8" type="checkbox" name="house"> Дом/Квартира
+			</div>
+
+			<div>
+				<input tabindex="9" type="checkbox" name="car"> Машина
+			</div>
+		</div>
+
+		<div>
+			<p>Обо мне:</p>
+			<div>
+				<textarea tabindex="10" name="aboutMe"></textarea>
+			</div>
+		</div>
+
+		<div>
+			<button tabindex="11" type="submit">Отправить</button>
+			<button tabindex="12" type="reset" onclick="alert('Вы уверены?');">Очистить</button>
+		</div>
+
+	  </form>
 <!-- Скрипт -->
 <script src="js/script.js"></script>
 </body>
