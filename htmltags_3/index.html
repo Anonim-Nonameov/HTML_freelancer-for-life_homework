@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>ДЗ - HTML</title>
+</head>
+<body>
+
+	<!-- ДЗ: сверстать форму, неважно какую. -->
+
+	<!-- Халтура :D -->
+
+	<form action="#" method="post" enctype="multipart/form-data">
+		<div>
+			<p>Введите ваше имя</p>
+			<input tabindex="1" type="text" name="usrnme">
+		</div>
+		<div>
+			<p>Введите ваш пароль</p>
+			<input tabindex="2" type="password" name="usrpsswd">
+		</div>
+		<div>
+			<p>Ваша аватарка</p>
+			<input tabindex="3" type="file" name="usrphto">
+		</div>
+		<div>
+			<p>Ваш телефон</p>
+			<input type="tel" name="usrtel">
+		</div>
+		<div>
+			<p>Какое у вас есть имущество?</p>
+			<div>
+				<input checked type="radio" name="legs" value="yes"> Ноги
+			</div>
+			<div>
+				<input type="radio" name="bike" value="yes"> Велик
+			</div>
+			<div>
+				<input type="radio" name="car" value="yes"> Машина
+			</div>
+			<div>
+				<input type="radio" name="moto" value="yes"> Мотоцикл
+			</div>
+			<div>
+				<input disabled type="radio" name="plane" value="yes"> Самолет
+			</div>
+		</div>
+		<h2>Доп. инфо</h2>
+		<div>
+			<p>Ваш любимый цвет:</p>
+			<select name="favclr" multiple>
+				<option value="red">Красный</option>
+				<option value="green">Зеленый</option>
+				<option selected value="blue">Синий</option>
+				<option value="yellow">Желтый</option>
+			</select>
+		</div>
+		<div>
+			<p>О себе:</p>
+			<textarea name="usrinfo"></textarea>
+		</div>
+		<div>
+			<p>Действия:</p>
+			<button type="submit">Отправить</button>
+			<button type="reset">Очистить</button>
+		</div>
+	</form>
+
+<!-- Скрипт -->
+<script src="js/script.js"></script>
+</body>
+</html>
