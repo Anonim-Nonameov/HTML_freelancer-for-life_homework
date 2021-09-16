@@ -1,0 +1,45 @@
+body {
+	font-family: Arial;
+	color: #333333;
+}
+
+h2{
+	font-size: 20px;
+	color: #445161;
+}
+
+.right {
+	text-align: right;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.size30px {
+	font-size: 25px;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+.times {
+	font-family: Times;
+}
+
+.ninja-text {
+	text-shadow: 1px 1px 1px #000;
+}
