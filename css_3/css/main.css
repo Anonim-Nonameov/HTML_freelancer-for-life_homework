@@ -1,0 +1,36 @@
+* {
+	margin: 0px 0px 35px 0px;
+}
+
+.block {
+	display: block;
+	margin: 0;
+}
+
+.block2 {
+	display: block;
+	margin: 0px 0px 35px 0px;
+}
+
+.block3 {
+	margin: 0px 0px 70px 0px;
+}
+
+.inline-block {
+	display: inline-block;
+	margin: 0px 40px 35px 0px;
+}
+
+.break {
+	margin: 0px 445px 0px 0px;
+}
+
+.inline-block2 {
+	display: inline-block;
+	margin: 0px 40px 35px 40px;
+}
+
+.block4 {
+	display: block;
+	margin: 70px 0px 70px 0px;
+}
