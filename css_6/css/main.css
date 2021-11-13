@@ -1,0 +1,54 @@
+/* Для начала небольшая стилизация страницы */
+
+body {
+	font-family: Arial;
+	font-size: 20px;
+	color: #273d46;
+	background-color: #e8e8e8;
+	padding: 30px;
+}
+
+/* А теперь приступим к общей стилизации */
+
+.list li {
+	background: url(../img/check_icon.png) left center no-repeat;
+	line-height: 36px;
+	padding-left: 30px;
+}
+
+.list li:first-child {
+	text-decoration: line-through;
+}
+
+.list li:nth-child(2) {
+	font-weight: 700;
+}
+
+.list li:nth-child(3) {
+	font-style: italic;
+}
+
+.list li:nth-child(4) {
+	text-transform: uppercase;
+}
+
+/* Готово! теперь стили при ховере (наведении) */
+
+.list li:first-child:hover {
+	text-decoration: none;
+}
+
+.list li:nth-child(2):hover {
+	font-weight: 400;
+	color: #d55a5a;
+}
+
+.list li:nth-child(3):hover {
+	font-style: normal;
+}
+
+.list li:nth-child(4):hover {
+	text-transform: none;
+}
+
+/* А на этом.. почти всё. Возникли кое какие проблемдосы, доделаю дз завтра (обещаю)! */
