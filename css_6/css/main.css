@@ -51,4 +51,53 @@ body {
 	text-transform: none;
 }
 
-/* А на этом.. почти всё. Возникли кое какие проблемдосы, доделаю дз завтра (обещаю)! */
+/* Отлично, со списком мы закончили! теперь давайте стилизовать кнопочку */
+
+.btn {
+	width: 200px;
+	height: 45px;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.2em;
+	color: #fff;
+	background-color: #80b7b3;
+	box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+	border-radius: 25px;
+	margin: 40px 0 0 0;
+}
+
+.btn img {
+	display: inline-block;
+	margin: 0.95em 0 0 2px;
+}
+
+/* Готово! а теперь давайте зададим стили при хавере (наведении) */
+
+.btn:hover {
+	background-color: #3a5856;
+}
+
+/* Очень хорошо! теперь давайте зададим стили в активном режиме (при нажатии на элемент) */
+
+.btn:active {
+	background-color: #818181;
+}
+
+/* Ну вот и всё, с кнопочкой мы закончили! урааа! теперь давайте стилизовать инпуту */
+
+.input {
+	width: 295px;
+	height: 50px;
+	border: 1px solid #b0b0b0;
+	margin: 40px 0 0 0;
+}
+
+/* Последние штрихи: добавим инпуту стили при получении фокуса (когда элемент выбран через TAB/мышкой) */
+
+.input:focus {
+	border: 1px solid #7fbed5;
+	box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+}
+
+/* Ну вот и всё! с ДЗ покончено :) */
