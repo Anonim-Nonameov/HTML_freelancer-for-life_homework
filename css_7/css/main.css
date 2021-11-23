@@ -1,0 +1,108 @@
+/*
+Итак.. сегодня у нас практически та же самая домашка, за исключением добавления пседвоэлементов, + в
+HTML нет инпута, но не суть важно. Начнем с оформления самой страницы:
+*/
+
+body {
+	font-family: Arial;
+	font-size: 20px;
+	color: #273d46;
+	background-color: #e8e8e8;
+	padding: 30px;
+}
+
+/*
+Отлично! а теперь приступаем к самой стилизации. Начнем со списка. Здесь всё то же самое что и тогда, но
+на этот раз картинка вставляется через псевдоэлемент ::before -
+*/
+
+
+.list li::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	background-image: url(../img/icon.jpg);
+	background-repeat: no-repeat;
+	margin: 0 10px 0 0;
+}
+
+.list li:first-child {
+	text-decoration: line-through;
+}
+
+.list li:nth-child(2) {
+	font-weight: 700;
+}
+
+.list li:nth-child(3) {
+	font-style: italic;
+}
+
+.list li:nth-child(4) {
+	text-transform: uppercase;
+}
+
+/* А теперь стилизация при hover'e. */
+
+.list li:first-child:hover {
+	text-decoration: none;
+}
+
+.list li:nth-child(2):hover {
+	font-weight: 400;
+	color: #d55a5a;
+}
+
+.list li:nth-child(3):hover {
+	font-style: normal;
+}
+
+.list li:nth-child(4):hover {
+	text-transform: none;
+}
+
+/*
+Ну вот! и всё вроде бы ничего, но проблема всё таки есть. Заключается она в том, что при хавере
+на второй элемент меняется только цвет текста, а иконки - нет. Для этого комбинируем псевдокласс
+и псевдоэлемент (красная версия иконки у меня уже есть):
+*/
+
+.list li:nth-child(2):hover::before {
+	content: "";
+	background-image: url(../img/icon_red.jpg);
+}
+
+/*
+Отлично, со списком покончено! теперь перейдем к стилизации кнопки:
+*/
+
+.btn {
+	width: 200px;
+	height: 45px;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.2em;
+	color: #fff;
+	background-color: #80b7b3;
+	box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+	border-radius: 25px;
+	margin: 40px 0 0 0;
+}
+
+/*
+Готово! теперь добавляем стрелку. Стрелочка добавляется через п-элемент:
+*/
+
+.btn::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 15px;
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	padding: 10px 0 0 0;
+}
+
+/* А остальное доделаю позже! */
