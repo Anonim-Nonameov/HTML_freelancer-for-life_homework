@@ -102,7 +102,50 @@ body {
 	height: 15px;
 	background-image: url(../img/arrow.png);
 	background-repeat: no-repeat;
-	padding: 10px 0 0 0;
+	background-position: center;
 }
 
-/* А остальное доделаю позже! */
+/*
+Отлично! теперь в ход идет стилизация при хавере.
+*/
+
+.btn:hover {
+	background-color: #3a5856;
+}
+
+/*
+Стилизация при фокусе.
+*/
+
+.btn:focus {
+	background-color: #818181;
+}
+
+/*
+Теперь осталось самое простое - стилизовать параграфы. С этим вообще никаких проблем:
+*/
+
+.text {
+	font-size: 18px;
+	line-height: 28px;
+	margin: 40px 0 0 0;
+}
+
+.text p {
+	padding: 20px 0 0 0;
+}
+
+/*
+Стилизируем первую строку текста в 1 абзаце и первую букву во 2 через п-классы:
+*/
+
+.text p:first-child::first-line {
+	color: #ff0000;
+}
+
+.text p:last-child::first-letter {
+	font-size: 25px;
+	color: #ff0000;
+}
+
+/* А на этом всё! ДЗ закончено на 95%, осталось лишь сдвинуть стрелку в кнопке к центру. Но это - завтра! */
